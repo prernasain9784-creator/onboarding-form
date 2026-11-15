@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #101827;
+  color: white;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.form-box {
+  width: 100%;
+  max-width: 550px;
+  padding: 35px;
+  background: #1d293b;
+  border: 1px solid #334155;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px #0005;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #aab8cc;
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin-bottom: 25px;
+}
+
+.progress-info {
+  margin-bottom: 10px;
+  color: #38bdf8;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #35445a;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: #38bdf8;
+  transition: width 0.3s;
+}
+
+label {
+  display: block;
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 13px;
+  background: #111c2d;
+  border: 1px solid #42516a;
+  border-radius: 7px;
+  color: white;
+  outline: none;
+}
+
+input:focus {
+  border-color: #38bdf8;
+}
+
+.password-box {
+  display: flex;
+  align-items: center;
+}
+
+.password-box input {
+  flex: 1;
+}
+
+.toggle {
+  margin-left: -65px;
+  padding: 8px;
+  background: transparent;
+  color: #38bdf8;
+  border: none;
+  font-size: 12px;
+}
+
+.error {
+  color: #ff7777;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+button {
+  padding: 12px 25px;
+  background: #38bdf8;
+  color: #101827;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.back {
+  background: transparent;
+  color: white;
+  border: 1px solid #64748b;
+}
+
+.review {
+  background: #111c2d;
+  padding: 18px;
+  margin-top: 15px;
+  border-radius: 8px;
+  overflow-wrap: anywhere;
+}
+
+.review h3 {
+  color: #38bdf8;
+}
+
+.review p {
+  color: #cbd5e1;
+}
+
+.edit {
+  background: transparent;
+  color: #38bdf8;
+  padding: 5px;
+}
+
+.success {
+  text-align: center;
+}
+
+.success h1 {
+  color: #4ade80;
+}
+
+@media (max-width: 600px) {
+  .form-box {
+    padding: 22px;
+  }
+}
